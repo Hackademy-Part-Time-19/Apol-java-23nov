@@ -57,6 +57,15 @@ function aggiungiProdotto() {
   alert(prodottoAggiunto + " aggiunto nella lista");
 }
 
+function visualizaLista() {
+  let index = 0;
+  if (index < listaSpesa.length) {
+    alert("La lista della spesa\n\n" + listaSpesa);
+  } else {
+    alert("Nessun prodotto nella lista");
+  }
+}
+
 function eliminaProdotto() {
   let i = 0;
   if (i < listaSpesa.length) {
@@ -81,6 +90,7 @@ function ordinaLista() {
   }
 }
 
+
 function modificaProdotto() {
   let i = 0;
   if (i < 1) {
@@ -96,15 +106,6 @@ function modificaProdotto() {
 function eliminaLista() {
   listaSpesa = [];
   alert("Lista eliminata!");
-}
-
-function visualizaLista() {
-  let index = 0;
-  if (index < listaSpesa.length) {
-    alert("La lista della spesa\n\n" + listaSpesa);
-  } else {
-    alert("Nessun prodotto nella lista");
-  }
 }
 
 function esci() {
