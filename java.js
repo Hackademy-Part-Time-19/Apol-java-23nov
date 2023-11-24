@@ -1,10 +1,10 @@
 
 let listaSpesa = ["Pane", "Latte"];
 
-while (true) {
+while (listaSpesa !=0) {
   let scelta = parseInt(
     prompt(
-      "Inserisci il numero per:\n\n1. Aggiungi un prodotto alla lista\n\n2. Elimina un elemento dalla lista\n\n3. Ordina la lista in ordine alfabetico\n\n4. Modifica un elemento della lista\n\n5. Elimina l’intera lista\n\n6. Visualiza lista "
+      "Inserisci il numero per:\n\n1. Aggiungi un prodotto alla lista\n\n2. Elimina un elemento dalla lista\n\n3. Ordina la lista in ordine alfabetico\n\n4. Modifica un elemento della lista\n\n5. Elimina l’intera lista\n\n6. Visualiza lista\n\n7. Esci dal programa "
     )
   );
 
@@ -39,7 +39,10 @@ while (true) {
 
       break;
 
-      
+      case 7:
+       esci()
+  
+        break;
 
     default:
       
@@ -104,7 +107,9 @@ function eliminaLista() {
   alert("Lista eliminata!");
 }
 
-
+function esci() {
+  listaSpesa=listaSpesa==0
+}
 
 
 
