@@ -51,13 +51,10 @@ while (listaSpesa !=0) {
   }
 }
 
-function visualizaLista() {
-  let index = 0;
-  if (index < listaSpesa.length) {
-    alert("La lista della spesa\n\n" + listaSpesa);
-  } else {
-    alert("Nessun prodotto nella lista");
-  }
+function aggiungiProdotto() {
+  let prodottoAggiunto = prompt("Cosa vuoi aggiungere alla lista?");
+  listaSpesa.push(prodottoAggiunto);
+  alert(prodottoAggiunto + " aggiunto nella lista");
 }
 
 function eliminaProdotto() {
@@ -84,12 +81,6 @@ function ordinaLista() {
   }
 }
 
-function aggiungiProdotto() {
-  let prodottoAggiunto = prompt("Cosa vuoi aggiungere alla lista?");
-  listaSpesa.push(prodottoAggiunto);
-  alert(prodottoAggiunto + " aggiunto nella lista");
-}
-
 function modificaProdotto() {
   let i = 0;
   if (i < 1) {
@@ -105,6 +96,15 @@ function modificaProdotto() {
 function eliminaLista() {
   listaSpesa = [];
   alert("Lista eliminata!");
+}
+
+function visualizaLista() {
+  let index = 0;
+  if (index < listaSpesa.length) {
+    alert("La lista della spesa\n\n" + listaSpesa);
+  } else {
+    alert("Nessun prodotto nella lista");
+  }
 }
 
 function esci() {
